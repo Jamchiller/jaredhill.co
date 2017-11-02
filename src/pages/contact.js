@@ -5,7 +5,7 @@ import styled from 'styled-components';
 
 import Container from '../components/Container';
 import Section from '../components/Section';
-import ContactSection from '../components/ContactForm';
+import ContactForm from '../components/ContactForm';
 
 class Contact extends React.Component {
   render() {
