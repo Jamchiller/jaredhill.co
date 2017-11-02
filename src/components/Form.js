@@ -50,7 +50,7 @@ const inputStyles = css`
   &:focus,
   &:valid {
     & + ${Label} {
-      transform: translate(-1rem, -260%) scale(0.9);
+      transform: translate3d(-1rem, -260%, 0) scale3d(0.9, 0.9, 0);
     }
   }
   &:focus {

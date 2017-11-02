@@ -2,17 +2,17 @@ import React from 'react';
 import styled from 'styled-components';
 import t from '../styles/theme';
 import { serif, sans } from '../styles/utils';
-import { Button } from './Button';
+import { LinkButton } from './Button';
 
 const Container = styled.article`
   text-align: center;
+  & > * + * {
+    margin-top: ${t.space[2]};
+  }
   @media screen and (min-width: 50em) {
     display: flex;
     flex-direction: row;
     align-items: center;
-  }
-  & > * + * {
-    margin-top: ${t.space[3]};
   }
   &:nth-child(even) > div {
     order: 1;
@@ -23,12 +23,15 @@ const Container = styled.article`
 
 const Content = styled.div`
   ${serif};
+  & > * + * {
+    margin-top: ${t.space[2]};
+  }
   @media screen and (min-width: 50em) {
     margin-right: ${t.space[4]};
     flex: 0 0 60%;
-  }
-  & > * + * {
-    margin-top: ${t.space[3]};
+    & > * + * {
+      margin-top: ${t.space[3]};
+    }
   }
 `;
 
@@ -45,7 +48,7 @@ export default ({ title, image, children }) => (
     <Content>
       <Title>{title}</Title>
       <p>{children}</p>
-      <Button>View the full case study on Medium</Button>
+      <LinkButton>View the full case study on Medium</LinkButton>
     </Content>
     <img src={image} alt={`${title} case-study screenshot`} />
   </Container>

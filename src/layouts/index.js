@@ -11,9 +11,7 @@ import { Footer, FooterContent, Divider } from '../components/Footer';
 const Container = styled.div`
   ${space};
   position: relative;
-  ${'' /* min-height: 100vh; */}
-  ${'' /* overflow: hidden; */}
-  background: linear-gradient(${t.colors.primary}, ${t.colors.tertiary} 33%);
+  background: linear-gradient(${t.colors.primary}, ${t.colors.tertiary} 750px);
 `;
 
 class Template extends React.Component {

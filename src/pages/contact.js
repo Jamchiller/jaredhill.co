@@ -4,7 +4,8 @@ import Helmet from 'react-helmet';
 import styled from 'styled-components';
 
 import Container from '../components/Container';
-import ContactSection from '../components/ContactSection';
+import Section from '../components/Section';
+import ContactSection from '../components/ContactForm';
 
 class Contact extends React.Component {
   render() {
@@ -12,11 +13,9 @@ class Contact extends React.Component {
     return (
       <Container py={[4, 4, 5]}>
         <Helmet title={siteTitle} />
-        <ContactSection
-          label="Get in touch"
-          title="Get in touch"
-          id="contact"
-        />
+        <Section title="Get in touch" id="contact">
+          <ContactForm />
+        </Section>
       </Container>
     );
   }

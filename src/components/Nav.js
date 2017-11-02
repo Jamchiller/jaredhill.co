@@ -54,7 +54,7 @@ const NavLink = styled(Link)`
     ${p => p.current && css`border-bottom-color: ${t.colors.bg};`};
     &:hover {
       color: inherit;
-      border-bottom-color: ${t.colors.primary};
+      border-bottom-color: ${t.colors.bg};
     }
   }
   @media (max-width: 40em) and (hover: hover) {
