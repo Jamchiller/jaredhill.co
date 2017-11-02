@@ -32,10 +32,13 @@
   "devDependencies": {
     "gatsby-plugin-styled-components": "^1.0.5",
     "gh-pages": "^0.12.0",
-    "prettier": "^1.6.1"
+    "prettier": "^1.6.1",
+    "surge": "^0.19.0"
   },
   "homepage": "https://github.com/noahg/gatsby-starter-blog-no-styles#readme",
-  "keywords": ["gatsby"],
+  "keywords": [
+    "gatsby"
+  ],
   "license": "MIT",
   "main": "n/a",
   "repository": {
@@ -44,14 +47,12 @@
   },
   "scripts": {
     "dev": "gatsby develop",
-    "lint":
-      "./node_modules/.bin/eslint --ext .js,.jsx --ignore-pattern public .",
+    "lint": "./node_modules/.bin/eslint --ext .js,.jsx --ignore-pattern public .",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "format":
-      "prettier --trailing-comma es5 --no-semi --single-quote --write 'src/**/*.js'",
+    "format": "prettier --trailing-comma es5 --no-semi --single-quote --write 'src/**/*.js'",
     "develop": "gatsby develop",
-    "remove-maps": "find ./public -name *.map",
-    "build": "gatsby build",
-    "deploy": "gatsby build --prefix-paths && gh-pages -d public"
+    "remove-maps": "find ./public -name *.map | xargs rm",
+    "build": "gatsby build && npm run remove-maps",
+    "deploy": "surge public -d jaredhill.surge.sh"
   }
 }
