@@ -21,7 +21,8 @@ injectGlobal`
   }
 
   body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-family: 'Cabin', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    letter-spacing: 1px;
     color: ${t.colors.textDark};
     background-color: ${t.colors.bg};
     line-height: 1.5;
@@ -30,7 +31,8 @@ injectGlobal`
   h1,
   h2,
   h3,
-  h4 {
+  h4,
+  h5 {
     line-height: 1.1;
   }
 

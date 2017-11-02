@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: 'Oliver James',
-    author: 'Oliver Phillips',
+    title: 'Jared Hill',
+    author: 'Jared Hill',
   },
   plugins: [
     {

@@ -1,23 +1,23 @@
 import styled from 'styled-components';
 import { space, width } from 'styled-system';
 import shadow from '../styles/shadow';
+import t from '../styles/theme';
 
-export default styled.button`
+export const Button = styled.button`
   ${space};
   ${width};
+  display: inline-block;
   position: relative;
-  font-weight: 600;
-  background-color: ${p => p.theme.colors.grey[2]};
-  color: ${p => p.theme.colors.textLight};
-  border-radius: 2px;
+  padding: ${t.space[1]} ${t.space[3]};
+  line-height: 1;
+  text-decoration: none;
+  background-color: ${t.colors.secondary};
+  color: ${t.colors.textLight};
+  border-radius: 3rem;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.6);
   transition: background-color 0.2s, color 0.2s;
-  @media screen and (min-width: 40em) {
-    border-radius: 4px;
-  }
   &:hover {
-    color: ${p => p.theme.colors.textDark};
-    background-color: ${p => p.theme.colors.primary};
+    background-color: ${t.colors.primary};
   }
   &:focus {
     outline: none;
@@ -27,3 +27,5 @@ export default styled.button`
     border: 0;
   }
 `;
+
+export const LinkButton = Button.withComponent('a');

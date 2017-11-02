@@ -15,12 +15,13 @@ const Nav = styled.nav`
   background-color: ${t.colors.grey[0]};
   box-shadow: 0 -1px 1px rgba(0, 0, 0, 0.15);
   z-index: 999;
-  @media (min-width: 40em) {
+  @media screen and (min-width: 40em) {
     position: initial;
     margin-left: 1.5rem;
     height: auto;
     border: none;
     box-shadow: none;
+    color: ${t.colors.textLight};
     background-color: transparent;
   }
 `;
@@ -49,8 +50,8 @@ const NavLink = styled(Link)`
   border-top: 5px solid transparent;
   transition: border-color 0.2s;
   @media (min-width: 40em) {
-    border-bottom: 4px solid transparent;
-    ${p => p.current && css`border-bottom-color: ${t.colors.grey[3]};`};
+    border-bottom: 2px solid transparent;
+    ${p => p.current && css`border-bottom-color: ${t.colors.bg};`};
     &:hover {
       color: inherit;
       border-bottom-color: ${t.colors.primary};
@@ -82,7 +83,7 @@ const navLinks = current => {
       icon: 'person',
     },
     {
-      path: '/blog',
+      path: '/work',
       icon: 'book',
     },
     {

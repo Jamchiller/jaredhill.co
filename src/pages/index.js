@@ -4,23 +4,24 @@ import Helmet from 'react-helmet';
 
 import Container from '../components/Container';
 import Title from '../components/Title';
-import BlogSection from '../components/BlogSection';
+import HomeSection from '../components/HomeSection';
+import Footer from '../components/Footer';
 
 class BlogIndex extends React.Component {
   render() {
     const siteTitle = `${this.props.data.site.siteMetadata
-      .title} | Frontend Dev`;
+      .title} | UX Designer`;
     const recentPosts = this.props.data.allMarkdownRemark.edges.slice(0, 3);
     return (
-      <Container>
+      <Container py={[4, 4, 5]}>
         <Helmet title={siteTitle} />
-        <Title big>I'm a frontend developer in London.</Title>
-        <BlogSection
+        <HomeSection />
+        {/* <BlogSection
           label="Recent Posts"
           direction={['column', 'column', 'row']}
           posts={recentPosts}
           id="posts"
-        />
+        /> */}
       </Container>
     );
   }

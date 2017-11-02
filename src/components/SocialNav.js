@@ -4,7 +4,10 @@ import { space } from 'styled-system';
 import Icon from './Icon';
 import t from '../styles/theme';
 
-const Social = styled.nav`${space};`;
+const Social = styled.nav`
+  ${space};
+  color: ${t.colors.textLight};
+`;
 
 const List = styled.ul`
   ${space};
@@ -21,12 +24,12 @@ const IconLink = styled.a`
   display: block;
   @media screen and (min-width: 40em) {
     &:hover {
-      color: ${t.colors.primary};
+      color: ${t.colors.secondary};
     }
   }
   @media screen and (max-width: 40em) and (hover: hover) {
     &:hover {
-      color: ${t.colors.primary};
+      color: ${t.colors.secondary};
     }
   }
 `;
@@ -35,18 +38,26 @@ export default () => (
   <Social ml={'auto'}>
     <List>
       <Li ml={2}>
-        <IconLink href="https://twitter.com/_oliverjam" aria-label="Twitter">
-          <Icon name="twitter" fill />
+        <IconLink href="https://twitter.com/JamChiller" aria-label="Twitter">
+          <Icon name="twitter" />
         </IconLink>
       </Li>
       <Li ml={2}>
-        <IconLink href="https://github.com/oliverjam" aria-label="Github">
-          <Icon name="github" fill />
+        <IconLink href="https://dribbble.com/jamchiller" aria-label="Dribbble">
+          <Icon name="dribbble" />
         </IconLink>
       </Li>
       <Li ml={2}>
-        <IconLink href="https://linkedin.com/oliverjam" aria-label="Codepen">
-          <Icon name="codepen" />
+        <IconLink
+          href="https://www.linkedin.com/in/jaredmichaelhill/"
+          aria-label="Linked In"
+        >
+          <Icon name="linkedin" />
+        </IconLink>
+      </Li>
+      <Li ml={2}>
+        <IconLink href="https://medium.com/@jamchiller/" aria-label="Medium">
+          <Icon name="medium" />
         </IconLink>
       </Li>
     </List>

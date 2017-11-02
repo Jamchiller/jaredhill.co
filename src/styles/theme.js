@@ -13,8 +13,15 @@ const shades = [
 ];
 
 const palette = {
-  orange: 'orange',
-  white: hsl(30, 0.05, 0.98),
+  pink: '#ff0090',
+  purple: '#4000f1',
+  plum: '#95587b',
+  black: '#282828',
+  coral: '#ff4e48',
+  magenta: '#cb009a',
+  aqua: '#1ebbe3',
+  yellow: '#f5ff00',
+  white: '#ffffff',
 };
 
 export default {
@@ -22,10 +29,12 @@ export default {
   space: [0, '0.5rem', '1rem', '2rem', '4rem', '8rem'],
   colors: {
     grey: shades,
-    primary: palette.orange,
+    primary: palette.pink,
+    secondary: palette.coral,
+    tertiary: palette.purple,
     bg: palette.white,
     textLight: palette.white,
-    textDark: shades[4],
+    textDark: palette.black,
   },
   fontSizes: ['0.8125rem', '1rem', '2rem', '3rem', '4rem'],
 };

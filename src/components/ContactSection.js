@@ -5,7 +5,7 @@ import { withStateHandlers } from 'recompose';
 import Title from './Title';
 import Card from './Card';
 import { Form, FormRow, InputWrapper, Label, Input, TextArea } from './Form';
-import Button from './Button';
+import { Button } from './Button';
 
 const ContactSection = ({
   title,
@@ -66,13 +66,7 @@ const ContactSection = ({
           />
           <Label for="body">Your message</Label>
         </InputWrapper>
-        <Button
-          width={[1, 'auto']}
-          ml={[0, 'auto']}
-          px={2}
-          py={1}
-          type="submit"
-        >
+        <Button width={[1, 'auto']} ml={[0, 'auto']} type="submit">
           {loading ? 'Loading' : 'Submit'}
         </Button>
       </Form>
