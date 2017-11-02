@@ -1,5 +1,6 @@
 import { injectGlobal } from 'styled-components';
 import t from './theme';
+import { sans } from './utils';
 
 injectGlobal`
   *,
@@ -21,7 +22,7 @@ injectGlobal`
   }
 
   body {
-    font-family: 'Cabin', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    ${sans};
     letter-spacing: 1px;
     color: ${t.colors.textDark};
     background-color: ${t.colors.bg};
@@ -44,6 +45,11 @@ injectGlobal`
     &:hover {
       text-decoration-color: ${t.colors.primary};
     }
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
   }
 
   ul {

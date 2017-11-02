@@ -4,7 +4,6 @@ import styled, { ThemeProvider } from 'styled-components';
 import { space } from 'styled-system';
 import t from '../styles/theme';
 import '../styles/global';
-import '../styles/prism-duotone-light.css';
 
 import Header from '../components/Header';
 import { Footer, FooterContent, Divider } from '../components/Footer';
@@ -14,7 +13,7 @@ const Container = styled.div`
   position: relative;
   ${'' /* min-height: 100vh; */}
   ${'' /* overflow: hidden; */}
-  background: linear-gradient(${t.colors.primary}, ${t.colors.tertiary});
+  background: linear-gradient(${t.colors.primary}, ${t.colors.tertiary} 33%);
 `;
 
 class Template extends React.Component {

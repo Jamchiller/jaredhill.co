@@ -13,7 +13,7 @@ const Nav = styled.nav`
   height: 3.25rem;
   display: flex;
   background-color: ${t.colors.grey[0]};
-  box-shadow: 0 -1px 1px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 -6px 0 rgba(0, 0, 0, 0.15);
   z-index: 999;
   @media screen and (min-width: 40em) {
     position: initial;
@@ -80,15 +80,15 @@ const navLinks = current => {
   const pages = [
     {
       path: '/about',
-      icon: 'person',
+      icon: 'dribbble',
     },
     {
       path: '/work',
-      icon: 'book',
+      icon: 'dribbble',
     },
     {
       path: '/contact',
-      icon: 'phone',
+      icon: 'dribbble',
     },
   ];
   return pages.map((page, i) => (

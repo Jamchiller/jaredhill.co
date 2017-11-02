@@ -2,9 +2,10 @@ import React from 'react';
 import fetch from 'unfetch';
 import { withStateHandlers } from 'recompose';
 
+import { Section, Container, Content } from './Section';
 import Title from './Title';
-import Card from './Card';
-import { Form, FormRow, InputWrapper, Label, Input, TextArea } from './Form';
+// import Card from './Card';
+import { Form, InputWrapper, Label, Input, TextArea, Row } from './Form';
 import { Button } from './Button';
 
 const ContactSection = ({
@@ -18,20 +19,20 @@ const ContactSection = ({
   setLoading,
   setEmpty,
 }) => (
-  <section aria-label={!title && label}>
-    {title && <Title>{title}</Title>}
-    <Card flexDirection={'column'} mx={'auto'} px={[2, 3]} py={3}>
-      <Form
-        onSubmit={e => {
-          e.preventDefault();
-          setLoading();
-          submitData(e, name, email, body).then(response => {
-            console.log(response);
-            setEmpty();
-          });
-        }}
-      >
-        <FormRow>
+  <Section>
+    <Title>{title}</Title>
+    <Container>
+      <Content>
+        <Form
+          onSubmit={e => {
+            e.preventDefault();
+            setLoading();
+            submitData(e, name, email, body).then(response => {
+              console.log(response);
+              setEmpty();
+            });
+          }}
+        >
           <InputWrapper>
             <Input
               name="name"
@@ -54,24 +55,27 @@ const ContactSection = ({
             />
             <Label for="email">Email</Label>
           </InputWrapper>
-        </FormRow>
-        <InputWrapper>
-          <TextArea
-            name="body"
-            id="body"
-            rows="5"
-            required
-            value={body}
-            onChange={e => handleChange(e)}
-          />
-          <Label for="body">Your message</Label>
-        </InputWrapper>
-        <Button width={[1, 'auto']} ml={[0, 'auto']} type="submit">
-          {loading ? 'Loading' : 'Submit'}
-        </Button>
-      </Form>
-    </Card>
-  </section>
+          <InputWrapper>
+            <TextArea
+              name="body"
+              id="body"
+              rows="5"
+              required
+              value={body}
+              onChange={e => handleChange(e)}
+            />
+            <Label for="body">Your message</Label>
+          </InputWrapper>
+          <Row>
+            <Button width={[1, 'auto']} mx={'auto'} type="submit">
+              {loading ? 'Loading' : 'Send now'}
+            </Button>
+            <p>Or if you’d like, send me an email at hill.jaredm@gmail.com</p>
+          </Row>
+        </Form>
+      </Content>
+    </Container>
+  </Section>
 );
 
 const submitData = (e, name, email, body) => {

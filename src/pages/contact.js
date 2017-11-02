@@ -10,7 +10,7 @@ class Contact extends React.Component {
   render() {
     const siteTitle = `Contact | ${this.props.data.site.siteMetadata.title}`;
     return (
-      <Container maxWidth={'60ch'}>
+      <Container py={[4, 4, 5]}>
         <Helmet title={siteTitle} />
         <ContactSection
           label="Get in touch"
