@@ -1,6 +1,6 @@
 import { injectGlobal } from 'styled-components';
 import t from './theme';
-import { sans } from './utils';
+import { sans, serif } from './utils';
 
 injectGlobal`
   *,
@@ -28,6 +28,10 @@ injectGlobal`
     color: ${t.colors.textDark};
     background: linear-gradient(${t.colors.primary}, ${t.colors
   .tertiary} 750px);
+  }
+
+  p {
+    ${serif};
   }
 
   h1,

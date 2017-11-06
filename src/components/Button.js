@@ -9,7 +9,7 @@ export const Button = styled.button`
   ${width};
   display: inline-block;
   position: relative;
-  padding: ${t.space[2]} ${t.space[4]};
+  padding: ${t.space[2]} ${t.space[3]};
   font-family: 'Cabin', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
     Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
     'Segoe UI Symbol';
@@ -25,11 +25,14 @@ export const Button = styled.button`
   &:hover {
     outline: none;
     background-color: ${t.colors.primary};
-    transform: translateY(-4px);
-    box-shadow: -12px 14px 0 rgba(0, 0, 0, 0.1);
+    transform: translateY(-1px);
+    box-shadow: -9px 10px 0 rgba(0, 0, 0, 0.1);
   }
   &::-moz-focus-inner {
     border: 0;
+  }
+  @media screen and (min-width: 40em) {
+    padding: ${t.space[2]} ${t.space[3]};
   }
 `;
 

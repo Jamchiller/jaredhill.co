@@ -13,11 +13,11 @@ const Container = styled.article`
     display: flex;
     flex-direction: row;
     align-items: center;
-  }
-  &:nth-child(even) > div {
-    order: 1;
-    margin-right: 0;
-    margin-left: ${t.space[4]};
+    &:nth-child(even) > div {
+      order: 1;
+      margin-right: 0;
+      margin-left: ${t.space[4]};
+    }
   }
 `;
 
