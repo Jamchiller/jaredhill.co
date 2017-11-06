@@ -17,7 +17,7 @@ const Nav = styled.nav`
   z-index: 999;
   @media screen and (min-width: 40em) {
     position: initial;
-    margin-left: 1.5rem;
+    margin-left: 2rem;
     height: auto;
     border: none;
     box-shadow: none;
@@ -46,11 +46,8 @@ const NavLink = styled(Link)`
   font-size: ${t.fontSizes[0]};
   text-transform: capitalize;
   text-decoration: none;
-  border-bottom: 5px solid transparent;
-  border-top: 5px solid transparent;
-  transition: border-color 0.2s;
+  transition: background-color 0.2s;
   @media (min-width: 40em) {
-    border-bottom: 2px solid transparent;
     ${p => p.current && css`border-bottom-color: ${t.colors.bg};`};
     &:hover {
       color: inherit;
@@ -60,11 +57,11 @@ const NavLink = styled(Link)`
   @media (max-width: 40em) and (hover: hover) {
     &:hover {
       color: inherit;
-      ${p => !p.current && css`border-bottom-color: ${t.colors.primary};`};
+      ${p => !p.current && css`background-color: ${t.colors.primary};`};
     }
   }
   @media (max-width: 40em) {
-    ${p => p.current && css`border-bottom-color: ${t.colors.grey[1]};`};
+    ${p => p.current && css`background-color: ${t.colors.grey[1]};`};
   }
 `;
 

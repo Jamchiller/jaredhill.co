@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import t from '../styles/theme';
 import { serif, sans } from '../styles/utils';
-import { LinkButton } from './Button';
+import { ExternalLinkButton } from './Button';
 
 const Container = styled.article`
   text-align: center;
@@ -48,7 +48,9 @@ export default ({ title, image, children }) => (
     <Content>
       <Title>{title}</Title>
       <p>{children}</p>
-      <LinkButton>View the full case study on Medium</LinkButton>
+      <ExternalLinkButton>
+        View the full case study on Medium
+      </ExternalLinkButton>
     </Content>
     <img src={image} alt={`${title} case-study screenshot`} />
   </Container>

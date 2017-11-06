@@ -38,12 +38,22 @@ export default () => (
   <Social ml={'auto'}>
     <List>
       <Li ml={2}>
-        <IconLink href="https://twitter.com/JamChiller" aria-label="Twitter">
+        <IconLink
+          href="https://twitter.com/JamChiller"
+          aria-label="Twitter"
+          target="_blank"
+          rel="noopener"
+        >
           <Icon name="twitter" />
         </IconLink>
       </Li>
       <Li ml={2}>
-        <IconLink href="https://dribbble.com/jamchiller" aria-label="Dribbble">
+        <IconLink
+          href="https://dribbble.com/jamchiller"
+          aria-label="Dribbble"
+          target="_blank"
+          rel="noopener"
+        >
           <Icon name="dribbble" />
         </IconLink>
       </Li>
@@ -51,12 +61,19 @@ export default () => (
         <IconLink
           href="https://www.linkedin.com/in/jaredmichaelhill/"
           aria-label="Linked In"
+          target="_blank"
+          rel="noopener"
         >
           <Icon name="linkedin" />
         </IconLink>
       </Li>
       <Li ml={2}>
-        <IconLink href="https://medium.com/@jamchiller/" aria-label="Medium">
+        <IconLink
+          href="https://medium.com/@jamchiller/"
+          aria-label="Medium"
+          target="_blank"
+          rel="noopener"
+        >
           <Icon name="medium" />
         </IconLink>
       </Li>

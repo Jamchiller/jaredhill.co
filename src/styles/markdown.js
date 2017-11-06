@@ -1,7 +1,9 @@
 import { css } from 'styled-components';
+import { sans, serif } from './utils';
 import t from './theme';
 
 export default css`
+  ${serif};
   & > * + * {
     margin-top: 1em;
   }
@@ -9,9 +11,7 @@ export default css`
   & h3,
   & h4,
   & h5 {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-      Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
-      'Segoe UI Symbol';
+    ${sans};
   }
   & blockquote {
     font-style: italic;

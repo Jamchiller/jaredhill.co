@@ -15,18 +15,19 @@ injectGlobal`
     box-sizing: border-box;
   }
 
-  @media (min-width: 40em) {
+  ${'' /* @media (min-width: 40em) {
     html {
       font-size: 125%;
-    }
+    } */}
   }
 
   body {
     ${sans};
     letter-spacing: 1px;
-    color: ${t.colors.textDark};
-    background-color: ${t.colors.bg};
     line-height: 1.5;
+    color: ${t.colors.textDark};
+    background: linear-gradient(${t.colors.primary}, ${t.colors
+  .tertiary} 750px);
   }
 
   h1,

@@ -24,6 +24,11 @@ const ContactForm = ({
       });
     }}
   >
+    <p>
+      Whether you want to hire me, collaborate, send me a love letter or just
+      get something off your chest, I’d love to hear from you. Use the form
+      below and I’ll get back to you as soon as I can.
+    </p>
     <InputWrapper>
       <Input
         name="name"
@@ -61,7 +66,7 @@ const ContactForm = ({
       <Button width={[1, 'auto']} mx={'auto'} type="submit">
         {loading ? 'Loading' : 'Send now'}
       </Button>
-      <p>Or if you’d like, send me an email at hill.jaredm@gmail.com</p>
+      <p>Alternatively, you can email me at hi@jaredhill.co</p>
     </Row>
   </Form>
 );
@@ -73,7 +78,7 @@ const submitData = (e, name, email, body) => {
     replyTo: email,
     body: body,
   };
-  return fetch('https://micro-mailer.now.sh', {
+  return fetch('https://micro-mailer.now.sh/jared', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',

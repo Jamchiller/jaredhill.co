@@ -50,7 +50,7 @@ const inputStyles = css`
   &:focus,
   &:valid {
     & + ${Label} {
-      transform: translate3d(-1rem, -260%, 0) scale3d(0.9, 0.9, 0);
+      transform: translate3d(-1rem, -260%, 0) scale3d(0.9, 0.9, 1);
     }
   }
   &:focus {
@@ -70,6 +70,6 @@ export const TextArea = styled.textarea`
 export const Row = styled.div`
   text-align: center;
   & > * + * {
-    margin-top: ${t.space[2]};
+    margin-top: ${t.space[3]};
   }
 `;

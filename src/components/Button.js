@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { space, width } from 'styled-system';
+import Link from 'gatsby-link';
 import shadow from '../styles/shadow';
 import t from '../styles/theme';
 
@@ -18,17 +19,20 @@ export const Button = styled.button`
   color: ${t.colors.textLight};
   border-radius: 3rem;
   box-shadow: -8px 8px 0 rgba(0, 0, 0, 0.12);
+  cursor: pointer;
   transition: background-color 0.2s, color 0.2s;
+  &:hover,
   &:hover {
-    background-color: ${t.colors.primary};
-  }
-  &:focus {
     outline: none;
-    ${shadow(1)};
+    background-color: ${t.colors.primary};
+    transform: translateY(-4px);
+    box-shadow: -12px 14px 0 rgba(0, 0, 0, 0.1);
   }
   &::-moz-focus-inner {
     border: 0;
   }
 `;
 
-export const LinkButton = Button.withComponent('a');
+export const LinkButton = Button.withComponent(Link);
+
+export const ExternalLinkButton = Button.withComponent('a');

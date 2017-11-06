@@ -12,19 +12,19 @@ const studies = [
     title: 'Omorovizca',
     body:
       'Born and raised in one of the most isolated cities in the world, I decided to try something a little different and moved from Australia to London in 2013.',
-    image: 'https://placehold.it/300x600',
+    image: 'https://placehold.it/300x400',
   },
   {
     title: 'Omorovizca',
     body:
       'Born and raised in one of the most isolated cities in the world, I decided to try something a little different and moved from Australia to London in 2013.',
-    image: 'https://placehold.it/300x600',
+    image: 'https://placehold.it/300x400',
   },
   {
     title: 'Omorovizca',
     body:
       'Born and raised in one of the most isolated cities in the world, I decided to try something a little different and moved from Australia to London in 2013.',
-    image: 'https://placehold.it/300x600',
+    image: 'https://placehold.it/300x400',
   },
 ];
 
