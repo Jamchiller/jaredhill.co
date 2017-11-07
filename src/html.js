@@ -1,4 +1,9 @@
 import React from 'react';
+import appleIcon from './img/icons/apple-touch-icon.png';
+import favicon32 from './img/icons/favicon-32x32.png';
+import favicon16 from './img/icons/favicon-16x16.png';
+import safariTab from './img/icons/safari-pinned-tab.svg';
+import faviconIco from './img/icons/favicon.ico';
 
 let stylesStr;
 if (process.env.NODE_ENV === `production`) {
@@ -30,11 +35,16 @@ module.exports = class HTML extends React.Component {
             content="width=device-width, initial-scale=1, shrink-to-fit=no"
           />
           {this.props.headComponents}
-          {css}
           <link
-            href="https://fonts.googleapis.com/css?family=Adamina|Cabin:600"
+            href="https://fonts.googleapis.com/css?family=Cabin:600"
             rel="stylesheet"
           />
+          {css}
+          <link rel="apple-touch-icon" sizes="180x180" href={appleIcon} />
+          <link rel="icon" type="image/png" sizes="32x32" href={favicon32} />
+          <link rel="icon" type="image/png" sizes="16x16" href={favicon16} />
+          <link rel="mask-icon" href={safariTab} />
+          <link rel="shortcut icon" href={faviconIco} />
         </head>
         <body>
           {this.props.preBodyComponents}

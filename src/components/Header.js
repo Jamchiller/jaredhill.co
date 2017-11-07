@@ -26,7 +26,7 @@ const Logo = styled.svg`width: 2rem;`;
 export default ({ current }) => {
   return (
     <Wrapper>
-      <LogoLink to="/">
+      <LogoLink to="/" aria-label="Home">
         <Logo viewBox="0 0 4 4" fill="#fff">
           <rect x="0" y="0" width="3" height="1" />
           <rect x="1" y="0" width="1" height="4" />
