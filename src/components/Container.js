@@ -6,7 +6,7 @@ export default styled.div`
   display: flex;
   align-items: center;
   flex: 1;
-  max-width: ${p => (p.maxWidth ? p.maxWidth : '60rem')};
+  max-width: 58rem;
   margin-left: auto;
   margin-right: auto;
 `;

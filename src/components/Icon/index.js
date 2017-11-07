@@ -12,6 +12,8 @@ const Icon = styled.svg`
   transition: color 0.2s, fill 0.2s;
 `;
 
+const social = ['twitter', 'dribbble', 'linkedin', 'medium'];
+
 export default ({ className, size = 1, width, height, name, direction }) => (
   <Icon
     xmlns="http://www.w3.org/2000/svg"
@@ -19,7 +21,7 @@ export default ({ className, size = 1, width, height, name, direction }) => (
     size={size}
     width={width}
     height={height}
-    viewBox="0 0 24 24"
+    viewBox={social.includes(name) ? '0 0 24 24' : '0 0 100 100'}
     direction={direction}
   >
     <path d={paths[name]} />

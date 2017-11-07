@@ -47,6 +47,7 @@ const NavLink = styled(Link)`
   text-transform: capitalize;
   text-decoration: none;
   transition: background-color 0.2s;
+  border-bottom: 2px solid transparent;
   @media (min-width: 40em) {
     ${p => p.current && css`border-bottom-color: ${t.colors.bg};`};
     &:hover {
@@ -61,6 +62,7 @@ const NavLink = styled(Link)`
     }
   }
   @media (max-width: 40em) {
+    border-bottom: none;
     ${p => p.current && css`background-color: ${t.colors.grey[1]};`};
   }
 `;
@@ -76,23 +78,27 @@ const NavIcon = styled(Icon).attrs({
 const navLinks = current => {
   const pages = [
     {
+      path: '/',
+      icon: 'home',
+    },
+    {
       path: '/about',
-      icon: 'dribbble',
+      icon: 'about',
     },
     {
       path: '/work',
-      icon: 'dribbble',
+      icon: 'work',
     },
     {
       path: '/contact',
-      icon: 'dribbble',
+      icon: 'contact',
     },
   ];
   return pages.map((page, i) => (
     <Li key={i} mr={[0, 2, 3]}>
       <NavLink to={page.path} current={page.path === current}>
         <NavIcon name={page.icon} />
-        <span>{page.path.replace('/', '')}</span>
+        <span>{page.icon}</span>
       </NavLink>
     </Li>
   ));

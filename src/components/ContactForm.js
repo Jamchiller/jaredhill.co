@@ -5,23 +5,40 @@ import { withStateHandlers } from 'recompose';
 import { Form, InputWrapper, Label, Input, TextArea, Row } from './Form';
 import { Button } from './Button';
 
+const SubmitButton = ({ error, loading, sent, children, ...restProps }) => (
+  <Button disabled={sent} {...restProps}>
+    {(error && 'Error') ||
+      (sent && 'Sent') ||
+      (loading && 'Loading...') ||
+      children}
+  </Button>
+);
+
 const ContactForm = ({
   name,
   email,
   body,
   loading,
+  error,
+  sent,
   handleChange,
   setLoading,
   setEmpty,
+  setError,
 }) => (
   <Form
     onSubmit={e => {
       e.preventDefault();
       setLoading();
-      submitData(e, name, email, body).then(response => {
-        console.log(response);
-        setEmpty();
-      });
+      submitData(e, name, email, body)
+        .then(response => {
+          console.log(response);
+          setEmpty();
+        })
+        .catch(err => {
+          console.error('The error: ', err);
+          setError();
+        });
     }}
   >
     <p>
@@ -34,6 +51,7 @@ const ContactForm = ({
         name="name"
         id="name"
         type="text"
+        autocomplete="name"
         required
         value={name}
         onChange={e => handleChange(e)}
@@ -44,7 +62,8 @@ const ContactForm = ({
       <Input
         name="email"
         id="email"
-        type="text"
+        type="email"
+        autocomplete="email"
         required
         value={email}
         onChange={e => handleChange(e)}
@@ -63,9 +82,16 @@ const ContactForm = ({
       <Label for="body">Your message</Label>
     </InputWrapper>
     <Row>
-      <Button width={[1, 'auto']} mx={'auto'} type="submit">
-        {loading ? 'Loading' : 'Send now'}
-      </Button>
+      <SubmitButton
+        width={[1, 'auto']}
+        mx={'auto'}
+        type="submit"
+        loading={loading}
+        sent={sent}
+        error={error}
+      >
+        Send now
+      </SubmitButton>
       <p>Alternatively, you can email me at hi@jaredhill.co</p>
     </Row>
   </Form>
@@ -85,22 +111,43 @@ const submitData = (e, name, email, body) => {
     },
     mode: 'cors',
     body: JSON.stringify(data),
-  }).then(res => {
-    return res;
-  });
+  })
+    .then(res => {
+      return res;
+    })
+    .catch(err => {
+      console.log('erroring');
+      return err;
+    });
 };
 
 const withForm = withStateHandlers(
-  ({ name = '', email = '', body = '', loading = false }) => ({
+  ({
+    name = '',
+    email = '',
+    body = '',
+    loading = false,
+    error = false,
+    sent = false,
+  }) => ({
     name,
     email,
     body,
     loading,
+    error,
+    sent,
   }),
   {
     handleChange: state => e => ({ [e.target.name]: e.target.value }),
-    setEmpty: state => () => ({ name: '', email: '', body: '' }),
+    setEmpty: state => () => ({
+      name: '',
+      email: '',
+      body: '',
+      loading: false,
+      sent: true,
+    }),
     setLoading: ({ loading }) => () => ({ loading: true }),
+    setError: ({ error }) => () => ({ error: true }),
   }
 );
 

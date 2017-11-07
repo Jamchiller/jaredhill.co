@@ -15,10 +15,10 @@ injectGlobal`
     box-sizing: border-box;
   }
 
-  ${'' /* @media (min-width: 40em) {
+  @media (min-width: 40em) {
     html {
-      font-size: 125%;
-    } */}
+      font-size: 112.5%;
+    }
   }
 
   body {

@@ -48,7 +48,8 @@ const inputStyles = css`
   background-color: ${t.colors.grey[0]};
   box-shadow: -3px 3px 0 rgba(0, 0, 0, 0.2);
   &:focus,
-  &:valid {
+  &:valid,
+  &:not(:placeholder-shown) {
     & + ${Label} {
       transform: translate3d(-1rem, -260%, 0) scale3d(0.9, 0.9, 1);
     }
@@ -58,9 +59,15 @@ const inputStyles = css`
   }
 `;
 
-export const Input = styled.input`${inputStyles};`;
+export const Input = styled.input.attrs({
+  placeholder: '',
+})`
+  ${inputStyles};
+`;
 
-export const TextArea = styled.textarea`
+export const TextArea = styled.textarea.attrs({
+  placeholder: '',
+})`
   ${inputStyles};
   height: auto;
   resize: none;

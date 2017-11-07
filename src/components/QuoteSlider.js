@@ -1,5 +1,7 @@
 import React from 'react';
 import styled, { css } from 'styled-components';
+
+import Fade from './Fade';
 import Title from './Title';
 import { sans } from '../styles/utils';
 import t from '../styles/theme';

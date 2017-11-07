@@ -21,12 +21,15 @@ export const Button = styled.button`
   box-shadow: -8px 8px 0 rgba(0, 0, 0, 0.12);
   cursor: pointer;
   transition: background-color 0.2s, color 0.2s;
-  &:hover,
-  &:hover {
+  &:hover:not(:disabled),
+  &:focus:not(:disabled) {
     outline: none;
     background-color: ${t.colors.primary};
     transform: translateY(-1px);
     box-shadow: -9px 10px 0 rgba(0, 0, 0, 0.1);
+  }
+  &:disabled {
+    opacity: 0.6;
   }
   &::-moz-focus-inner {
     border: 0;
