@@ -66,10 +66,10 @@ class Template extends React.Component {
                 </p>
                 <Divider />
                 <p>
-                  This site was lovingly developed in brand-spanking new
-                  GatsbyJS by my friend @_oliverjam.
+                  This site was lovingly developed with brand-spanking new{' '}
+                  <a href="https://gatsbyjs.org/">Gatsby</a> by my friend{' '}
+                  <a href="http://oliverjam.es">Oli</a>.
                 </p>
-                <p>You can say hello and check out his other work here.</p>
               </FooterContent>
             </Footer>
           )}

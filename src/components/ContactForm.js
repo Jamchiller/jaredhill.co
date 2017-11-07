@@ -92,7 +92,10 @@ const ContactForm = ({
       >
         Send now
       </SubmitButton>
-      <p>Alternatively, you can email me at hi@jaredhill.co</p>
+      <p>
+        Alternatively, you can email me at{' '}
+        <a href="mailto://hi@jaredhill.co">hi@jaredhill.co</a>
+      </p>
     </Row>
   </Form>
 );
