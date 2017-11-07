@@ -17,6 +17,7 @@ const highlight = css`
   box-shadow: -12px 12px 0 rgba(0, 0, 0, 0.12);
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
   box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
   @media screen and (min-width: 40em) {
     line-height: 1.75;
   }
@@ -50,7 +51,10 @@ const Container = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 40vh;
+  height: 35vh;
+  @media screen and (min-width: 40em) {
+    height: 40vh;
+  }
 `;
 
 const Quote = ({ text, author }) => (

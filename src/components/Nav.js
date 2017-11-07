@@ -49,7 +49,9 @@ const NavLink = styled(Link)`
   transition: background-color 0.2s;
   border-bottom: 2px solid transparent;
   @media (min-width: 40em) {
-    ${p => p.current && css`border-bottom-color: ${t.colors.bg};`};
+    &[data-current='true'] {
+      border-bottom-color: ${t.colors.bg};
+    }
     &:hover {
       color: inherit;
       border-bottom-color: ${t.colors.bg};
@@ -58,12 +60,16 @@ const NavLink = styled(Link)`
   @media (max-width: 40em) and (hover: hover) {
     &:hover {
       color: inherit;
-      ${p => !p.current && css`background-color: ${t.colors.primary};`};
+      &[data-current='true'] {
+        background-color: ${t.colors.primary};
+      }
     }
   }
   @media (max-width: 40em) {
     border-bottom: none;
-    ${p => p.current && css`background-color: ${t.colors.grey[1]};`};
+    &[data-current='true'] {
+      background-color: ${t.colors.grey[1]};
+    }
   }
 `;
 
@@ -96,7 +102,7 @@ const navLinks = current => {
   ];
   return pages.map((page, i) => (
     <Li key={i} mr={[0, 2, 3]}>
-      <NavLink to={page.path} current={page.path === current}>
+      <NavLink to={page.path} data-current={page.path === current}>
         <NavIcon name={page.icon} />
         <span>{page.icon}</span>
       </NavLink>

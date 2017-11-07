@@ -9,19 +9,6 @@ export const Form = styled.form`
   }
 `;
 
-// export const FormRow = styled.div`
-//   & > * + * {
-//     margin-top: ${t.space[3]};
-//   }
-//   @media (min-width: 40em) {
-//     display: flex;
-//     & > * + * {
-//       margin-top: 0;
-//       margin-left: ${t.space[3]};
-//     }
-//   }
-// `;
-
 export const InputWrapper = styled.div`
   position: relative;
   width: 100%;
@@ -60,13 +47,13 @@ const inputStyles = css`
 `;
 
 export const Input = styled.input.attrs({
-  placeholder: '',
+  placeholder: ' ',
 })`
   ${inputStyles};
 `;
 
 export const TextArea = styled.textarea.attrs({
-  placeholder: '',
+  placeholder: ' ',
 })`
   ${inputStyles};
   height: auto;

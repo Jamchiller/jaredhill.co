@@ -45,7 +45,7 @@ const studies = [
 
 const caseStudies = studies.map(({ title, image, body, url }) => (
   <CaseStudy title={title} image={image} url={url}>
-    {body.map(para => <p>{para}</p>)}
+    {body.map((para, i) => <p key={i}>{para}</p>)}
   </CaseStudy>
 ));
 

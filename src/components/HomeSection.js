@@ -7,7 +7,7 @@ import { textShadow } from '../styles/utils';
 import t from '../styles/theme';
 
 const Section = styled.section`
-  max-width: 32rem;
+  max-width: 40rem;
   margin-left: auto;
   margin-right: auto;
   color: ${t.colors.textLight};
@@ -21,19 +21,31 @@ const Section = styled.section`
 const quotes = [
   {
     text: 'Not as smart or funny as he thinks he is.',
+    author: 'Antoni Buccini',
+  },
+  {
+    text: 'Wears an inappropriately short dressing gown.',
+    author: 'Mark Tureck',
+  },
+  {
+    text: "I beat him at table tennis and he's still bitter about it.",
     author: 'Oliver Phillips',
   },
   {
     text: 'Distinctly average.',
-    author: 'John Sandlebury',
+    author: 'Oscar Dell’Anna',
   },
   {
-    text: "Absolutely terrible at directions. Couldn't find bread in a bakery.",
-    author: 'Sam Gamgee',
+    text: 'He drinks Huel all in one go, like a pelican. It’s gross.',
+    author: 'Han Craig',
   },
   {
-    text: "I beat him at table tennis and he's still bitter about it.",
-    author: 'John Buckle-Grandine',
+    text: 'He’s crap at UX. Also, he’s ginger.',
+    author: 'Phoebe Chandler',
+  },
+  {
+    text: 'He once made me laugh. Just the one time.',
+    author: 'Joel McCluskey',
   },
 ];
 
