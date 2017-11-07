@@ -5,7 +5,7 @@ import shadow from '../styles/shadow';
 export const Form = styled.form`
   z-index: 0;
   & > * + * {
-    margin-top: ${t.space[3]};
+    margin-top: 3rem;
   }
 `;
 
@@ -31,7 +31,7 @@ const inputStyles = css`
   width: 100%;
   min-height: 2.75rem;
   padding: 0.75rem;
-  font-size: 0.85rem;
+  font-size: 1rem;
   background-color: ${t.colors.grey[0]};
   box-shadow: -3px 3px 0 rgba(0, 0, 0, 0.2);
   &:focus,
