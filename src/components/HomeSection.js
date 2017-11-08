@@ -40,12 +40,24 @@ const quotes = [
     author: 'Han Craig',
   },
   {
-    text: 'Jared “you owe me £2 for that coffee four months ago” Hill',
+    text: 'Allergic to the sun.',
+    author: 'Tilly Hill',
+  },
+  {
+    text: 'Jared ‘you owe me £2 for that coffee four months ago’ Hill',
     author: 'Phoebe Chandler',
   },
   {
     text: 'He once made me laugh. Just the one time.',
     author: 'Joel McCluskey',
+  },
+  {
+    text: 'His mum still buys his pants.',
+    author: 'Ruby Stevenson',
+  },
+  {
+    text: 'Alcohol just makes him even more irritating.',
+    author: 'Oscar Dell’Anna',
   },
 ];
 
