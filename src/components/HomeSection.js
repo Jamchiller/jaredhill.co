@@ -44,7 +44,7 @@ const quotes = [
     author: 'Tilly Hill',
   },
   {
-    text: 'Jared ‘you owe me £2 for that coffee four months ago’ Hill',
+    text: 'Jared ‘you owe me for that coffee five months ago’ Hill',
     author: 'Phoebe Chandler',
   },
   {
