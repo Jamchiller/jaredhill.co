@@ -20,14 +20,13 @@ class About extends React.Component {
           <p>
             I’m a User Experience Designer that’s big on ideas and obsessed with
             designing innovative yet practical digital experiences. Whilst
-            relatively new to UX, I’ve got over five years of commercial
-            experience across a number of disciplines. If it wasn’t so clichéd,
-            I’d call myself a generalist.
+            relatively new to UX, I’ve got over <em>five years of commercial
+            experience</em> across a number of disciplines.
           </p>
           <img src={headshot} alt="" />
           <p>
             Born and raised in one of the{' '}
-            <a href="https://en.wikipedia.org/wiki/Perth">
+            <a href="https://en.wikipedia.org/wiki/Perth"  target="_blank" rel="noopener">
               most isolated cities in the world
             </a>, I’ve spent my career (and a lot of my free time, too) learning
             about human behaviour and the many things that make us tick. This
@@ -40,7 +39,7 @@ class About extends React.Component {
             I quickly realised that I wanted to to move closer to the action,
             getting down and dirty designing the experiences themselves, and
             this led me to study the{' '}
-            <a href="https://generalassemb.ly/">
+            <a href="https://generalassemb.ly/" target="_blank" rel="noopener">
               immersive UX course at General Assembly
             </a>.
           </p>
@@ -50,7 +49,7 @@ class About extends React.Component {
             (obviously), and am currently developing a number of passion
             projects, including an app that helps people reduce their meat
             consumption and a VR app that helps people overcome{' '}
-            <a href="https://en.wikipedia.org/wiki/Glossophobia">
+            <a href="https://en.wikipedia.org/wiki/Glossophobia" target="_blank" rel="noopener">
               glossophobia
             </a>. I usually try to make sites that help people who have the same
             problems as me.
@@ -58,17 +57,17 @@ class About extends React.Component {
           <p>
             In my spare time, I’m a hobbyist writer, gym-goer and coffee
             drinker. I’m currently obsessed with{' '}
-            <a href="http://brutalistwebsites.com/">digital brutalism</a>,{' '}
-            <a href="https://timewellspent.io/">
+            <a href="http://brutalistwebsites.com/" target="_blank" rel="noopener">digital brutalism</a>,{' '}
+            <a href="https://timewellspent.io/"  target="_blank" rel="noopener">
               Tristan Harris’ Time Well Spent movement
             </a>, and{' '}
-            <a href="https://medium.com/@jamchiller/one-week-on-huel-one-small-step-for-man-one-giant-leap-for-my-bowels-a9026a48d94d">
+            <a href="https://medium.com/@jamchiller/one-week-on-huel-one-small-step-for-man-one-giant-leap-for-my-bowels-a9026a48d94d"  target="_blank" rel="noopener">
               Huel
             </a>.
           </p>
           <p>
             I’m currently looking for both freelance and permanent roles, so
-            give me a buzz and let’s grab a coffee.
+            give me a buzz and <Link to="/contact">let’s grab a coffee</Link>.
           </p>
           <h2>What I'm good at:</h2>
           <ul>

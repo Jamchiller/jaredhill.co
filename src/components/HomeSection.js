@@ -32,15 +32,15 @@ const quotes = [
     author: 'Oliver Phillips',
   },
   {
-    text: 'Distinctly average.',
-    author: 'Oscar Dell’Anna',
+    text: 'Could be really pretty if he made an effort.',
+    author: 'Rosie Hill',
   },
   {
     text: 'He drinks Huel all in one go, like a pelican. It’s gross.',
     author: 'Han Craig',
   },
   {
-    text: 'He’s crap at UX. Also, he’s ginger.',
+    text: 'Jared “you owe me £2 for that coffee four months ago” Hill',
     author: 'Phoebe Chandler',
   },
   {
@@ -53,13 +53,12 @@ const HomeSection = ({ label, title, direction, posts }) => (
   <Section>
     <QuoteSlider quotes={quotes} />
     <p>
-      Hello, I'm Jared and I'm a UX Designer based in London. The above quote is
-      real: in the name of transparency I asked the people closest to me to tell
-      me my worst qualities.
+      Hello, I'm Jared and I'm a UX Designer based in London. The above quotes are
+      real: in the name of transparency, I asked the people closest to me to describe my worst qualities.
     </p>
     <p>
       If you <em>still</em> want to work with me, you can{' '}
-      <Link to="/work">view my portfolio here</Link>
+      <Link to="/work">view my portfolio here</Link>.
     </p>
   </Section>
 );
