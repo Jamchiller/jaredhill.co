@@ -26,7 +26,7 @@ class About extends React.Component {
           <img src={headshot} alt="" />
           <p>
             Born and raised in one of the{' '}
-            <a href="https://en.wikipedia.org/wiki/Perth"  target="_blank" rel="noopener">
+            <a href="https://en.wikipedia.org/wiki/Perth"  target="_blank" rel="noopener" alt="Perth, Western Australia | Wikipedia">
               most isolated cities in the world
             </a>, I’ve spent my career (and a lot of my free time, too) learning
             about human behaviour and the many things that make us tick. This
@@ -39,7 +39,7 @@ class About extends React.Component {
             I quickly realised that I wanted to to move closer to the action,
             getting down and dirty designing the experiences themselves, and
             this led me to study the{' '}
-            <a href="https://generalassemb.ly/" target="_blank" rel="noopener">
+            <a href="https://generalassemb.ly/" target="_blank" rel="noopener" alt="General Assembly Home Page">
               immersive UX course at General Assembly
             </a>.
           </p>
@@ -49,19 +49,19 @@ class About extends React.Component {
             (obviously), and am currently developing a number of personal
             projects, including an app that helps people reduce their meat
             consumption and a VR app that helps people overcome{' '}
-            <a href="https://en.wikipedia.org/wiki/Glossophobia" target="_blank" rel="noopener">
+            <a href="https://en.wikipedia.org/wiki/Glossophobia" target="_blank" rel="noopener" alt="Glossophobia | Wikipedia">
               glossophobia
-            </a>. I usually try to make sites that help people who have the same
-            problems as me.
+            </a>. I usually try to make sites that help people <a href="http://canbeetsturnpoopredoramidying.com/"  target="_blank" rel="noopener" alt="CanBeetsTurnPoopRedOrAmIDying.com">who have the same
+            problems as me</a>.
           </p>
           <p>
             In my spare time, I’m a hobbyist writer, gym-goer and coffee
             drinker. I’m currently obsessed with{' '}
-            <a href="http://brutalistwebsites.com/" target="_blank" rel="noopener">digital brutalism</a>,{' '}
-            <a href="https://timewellspent.io/"  target="_blank" rel="noopener">
+            <a href="http://brutalistwebsites.com/" target="_blank" rel="noopener" alt="BrutalistWebsites.com">digital brutalism</a>,{' '}
+            <a href="https://timewellspent.io/"  target="_blank" rel="noopener" alt="TimeWellSpent.io">
               Tristan Harris’ Time Well Spent movement
             </a>, and{' '}
-            <a href="https://medium.com/@jamchiller/one-week-on-huel-one-small-step-for-man-one-giant-leap-for-my-bowels-a9026a48d94d"  target="_blank" rel="noopener">
+            <a href="https://medium.com/@jamchiller/one-week-on-huel-one-small-step-for-man-one-giant-leap-for-my-bowels-a9026a48d94d"  target="_blank" rel="noopener" alt="One Small Step for Man, One Giant Leap for My Bowels | Medium">
               Huel
             </a>.
           </p>
