@@ -81,7 +81,7 @@ export default class QuoteSlider extends React.Component {
     }
   };
   componentDidMount() {
-    this.Interval = setInterval(this.increment, 6000);
+    this.Interval = setInterval(this.increment, 4000);
   }
   componentWillUnmount() {
     clearInterval(this.Interval);
