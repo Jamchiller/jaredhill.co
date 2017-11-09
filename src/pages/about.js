@@ -46,7 +46,7 @@ class About extends React.Component {
           <p>
             I think that technology has the potential to change lives and the
             potential to destroy them, too. I want to be part of the good bit
-            (obviously), and am currently developing a number of passion
+            (obviously), and am currently developing a number of personal
             projects, including an app that helps people reduce their meat
             consumption and a VR app that helps people overcome{' '}
             <a href="https://en.wikipedia.org/wiki/Glossophobia" target="_blank" rel="noopener">
@@ -66,10 +66,10 @@ class About extends React.Component {
             </a>.
           </p>
           <p>
-            I’m currently looking for both freelance and permanent roles, so
+            Right now, I’m looking for both freelance and permanent roles, so
             give me a buzz and <Link to="/contact">let’s grab a coffee</Link>.
           </p>
-          <h2>What I'm good at:</h2>
+          <h2>What I’m good at:</h2>
           <ul>
             <li>Ideation & problem solving</li>
             <li>Creative & design strategy</li>
@@ -85,8 +85,8 @@ class About extends React.Component {
           </ul>
           <h2>How I do it:</h2>
           <p>
-            I prefer to work with the Double Diamond approach, with iterative
-            design cycles following Lean/Agile frameworks. For evidence, check
+            I use the Double Diamond approach, with iterative
+            design cycles following Lean/Agile methodologies. For evidence, check
             out <Link to="/work">my case studies</Link>.
           </p>
           <h2>What people say about me:</h2>
