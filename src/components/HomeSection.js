@@ -59,6 +59,10 @@ const quotes = [
     text: 'Alcohol just makes him even more irritating.',
     author: 'Oscar Dell’Anna',
   },
+  {
+    text: 'Jared Hill. No volume control.',
+    author: 'Kimberly Broom',
+  },
 ];
 
 const HomeSection = ({ label, title, direction, posts }) => (
