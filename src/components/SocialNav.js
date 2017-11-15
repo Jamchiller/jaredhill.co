@@ -22,9 +22,10 @@ const Li = styled.li`
 
 const IconLink = styled.a`
   display: block;
+  transition: transform 0.2s ease-out;
   @media screen and (min-width: 40em) {
     &:hover {
-      color: ${t.colors.secondary};
+      transform: scale(1.3);
     }
   }
   @media screen and (max-width: 40em) and (hover: hover) {
