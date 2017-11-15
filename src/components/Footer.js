@@ -30,6 +30,12 @@ export const FooterContent = styled.div`
   h4 {
     ${sans};
   }
+  & > h2 {
+    font-size: ${t.fontSizes[3]};
+    @media screen and (min-width: 40em) {
+      font-size: ${t.fontSizes[4]};
+    }
+  }
 `;
 
 const dot = css`
