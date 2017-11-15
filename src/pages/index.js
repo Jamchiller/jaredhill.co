@@ -13,7 +13,7 @@ class BlogIndex extends React.Component {
       .title} | UX Designer`;
     const recentPosts = this.props.data.allMarkdownRemark.edges.slice(0, 3);
     return (
-      <Container py={[4, 4, 5]}>
+      <Container pt={[0, 0, 4]} pb={[4, 4, 5]}>
         <Helmet title={siteTitle} />
         <HomeSection />
         {/* <BlogSection
