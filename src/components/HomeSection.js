@@ -36,16 +36,16 @@ const quotes = [
     author: 'Rosie Hill',
   },
   {
-    text: 'He drinks Huel all in one go, like a pelican. It’s gross.',
-    author: 'Han Craig',
+    text: 'Jared ‘you owe me for that coffee five months ago’ Hill',
+    author: 'Phoebe Chandler',
   },
   {
     text: 'Allergic to the sun.',
     author: 'Tilly Hill',
   },
   {
-    text: 'Jared ‘you owe me for that coffee five months ago’ Hill',
-    author: 'Phoebe Chandler',
+    text: 'He drinks Huel all in one go, like a pelican. It’s gross.',
+    author: 'Han Craig',
   },
   {
     text: 'He once made me laugh. Just the one time.',
@@ -58,6 +58,18 @@ const quotes = [
   {
     text: 'Alcohol just makes him even more irritating.',
     author: 'Oscar Dell’Anna',
+  },
+  {
+    text: 'Jared Hill. No volume control.',
+    author: 'Kimberly Broom',
+  },
+  {
+    text: 'Playing squash against him in a skirt still haunts me.',
+    author: 'James Metcalfe',
+  },
+  {
+    text: 'The worst taste in "hilarious" YouTube videos. Still scarred.',
+    author: 'Hannah Phillips',
   },
 ];
 
