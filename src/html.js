@@ -45,14 +45,6 @@ module.exports = class HTML extends React.Component {
           <link rel="icon" type="image/png" sizes="16x16" href={favicon16} />
           <link rel="mask-icon" href={safariTab} />
           <link rel="shortcut icon" href={faviconIco} />
-          <!-- Global site tag (gtag.js) - Google Analytics -->
-          <script async src="https://www.googletagmanager.com/gtag/js?id=UA-73022918-4"></script>
-          <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'UA-73022918-4');
-          </script>
         </head>
         <body>
           {this.props.preBodyComponents}
