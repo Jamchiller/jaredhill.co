@@ -57,7 +57,7 @@ class About extends React.Component {
           <p>
             In my spare time, I’m a hobbyist writer, gym-goer and coffee
             drinker. I’m currently obsessed with{' '}
-            <a href="http://brutalistwebsites.com/" target="_blank" rel="noopener" title="BrutalistWebsites.com">digital brutalism</a>,{' '}
+            <a href="https://uxdesign.cc/why-you-should-care-about-digital-brutalism-fa0c82d60133" target="_blank" rel="noopener" title="Why You Should Care About Digital Brutalism | Medium">digital brutalism</a>,{' '}
             <a href="https://timewellspent.io/"  target="_blank" rel="noopener" title="TimeWellSpent.io">
               Tristan Harris’ Time Well Spent movement
             </a>, and{' '}
