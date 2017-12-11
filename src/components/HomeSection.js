@@ -52,10 +52,6 @@ const quotes = [
     author: 'Joel McCluskey',
   },
   {
-    text: 'His mum still buys his pants.',
-    author: 'Ruby Stevenson',
-  },
-  {
     text: 'Alcohol just makes him even more irritating.',
     author: 'Oscar Dell’Anna',
   },
