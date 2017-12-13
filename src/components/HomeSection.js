@@ -60,11 +60,7 @@ const quotes = [
     author: 'Kimberly Broom',
   },
   {
-    text: 'Playing squash against him in a skirt still haunts me.',
-    author: 'James Metcalfe',
-  },
-  {
-    text: 'The worst taste in "hilarious" YouTube videos. Still scarred.',
+    text: 'He watches really weird videos on Youtube.',
     author: 'Hannah Phillips',
   },
 ];

@@ -66,8 +66,7 @@ class About extends React.Component {
             </a>.
           </p>
           <p>
-            Right now, I’m looking for both freelance and permanent roles, so
-            give me a buzz and <Link to="/contact">let’s grab a coffee</Link>.
+            Like what you've heard? Let's <Link to="/contact"> grab a coffee</Link>.
           </p>
           <h2>What I’m good at:</h2>
           <ul>
