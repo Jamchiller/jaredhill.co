@@ -60,6 +60,10 @@ const quotes = [
     author: 'Kimberly Broom',
   },
   {
+    text: 'His mum still buys his pants.',
+    author: 'Ruby Stevenson',
+  },
+  {
     text: 'He watches really weird videos on Youtube.',
     author: 'Hannah Phillips',
   },
