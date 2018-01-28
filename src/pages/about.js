@@ -19,9 +19,8 @@ class About extends React.Component {
         <Section title="A little bit about me">
           <p>
             I’m a User Experience Designer that’s big on ideas and obsessed with
-            designing innovative yet practical digital experiences. Whilst
-            relatively new to UX, I’ve got over <em>five years of commercial
-            experience</em> across a number of disciplines.
+            designing innovative yet practical digital experiences. I’ve got over five years of commercial
+            experience across a number of disciplines.
           </p>
           <img src={headshot} alt="" />
           <p>
